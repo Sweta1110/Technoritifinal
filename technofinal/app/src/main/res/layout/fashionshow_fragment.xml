@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="5dp"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/umangimage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/fashionshow"
+                android:scaleType="fitXY"
+                />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:layout_below="@+id/umangimage"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/umangdesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/textcolordescription"
+                        android:text="It is fashion that embraces and represents a culture and allows one to celebrate her heritage and origin. Ethnic means that something shares the distinctive cultural traits of a group in society. It relates to a group that shares a racial, national, religious, linguistic or religious heritage, regardless of whether the wearer still lives in her country of origin. Ethnicity is the traditional culture of a social group. When you dress to reflect your ethnicity, you are celebrating who you are and expressing your cultural roots.Come to participate or to just cheer up the others."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/umangdesc"
+                        android:textSize="20sp"
+                        android:padding="3dp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginTop="8dp"
+                        android:text="Schedule:-"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/umangdesc"
+                        android:textSize="20sp"
+                        android:padding="3dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/textcolordescription"
+                        android:text="@string/still_to_be_updated"
+                        />
+
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

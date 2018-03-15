@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:text="Litfest"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="80dp"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/background_img"
+            android:elevation="5dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/background_img"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/writer" />
+
+
+
+                <TextView
+                    android:id="@+id/view_parakram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="72dp"
+                    android:layout_marginStart="23dp"
+                    android:background="@drawable/back"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="@string/click_to_view"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="true"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/text_des"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/desc"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_des"
+                        android:padding="8dp"
+                        android:text="Premchand or Hemingway both amused the world with their stories and so can you.Presenting 'The writer's pen', where everyone will have a chance to pen their thoughts into stories which matter. Be it love, or life's events, or tragedy, just write it."
+                        android:textColor="@color/textcolordescription"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/text_sche"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_description"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/schedule"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_schedule"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_sche"
+                        android:padding="8dp"
+                        android:text="@string/still_to_be_updated"
+                        android:textColor="@color/textcolordescription"
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/btn_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/text_schedule"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/btnback"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp" />
+
+
+                </RelativeLayout>
+
+            </ScrollView>
+        </ViewFlipper>
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper1"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_below="@+id/viewFlipper"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/background_img"
+            android:elevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/background_img"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/extempore" />
+
+
+                <TextView
+                    android:id="@+id/view_parakram1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="74dp"
+                    android:layout_marginStart="19dp"
+                    android:background="@drawable/back"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="@string/click_to_view"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="true"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/text_des1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/desc"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_description1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_des1"
+                        android:padding="8dp"
+                        android:text="Are you fond of speeches or are you the voice of your group ? This is the event to express yourself, on any topic which you choose blindly. Your reaction, your views, your thoughts, just utter everything on that topic and amuse the audience and judges with your stand."
+                        android:textColor="@color/textcolordescription"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/text_sche1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_description1"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/schedule"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_schedule1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_sche1"
+                        android:padding="8dp"
+                        android:text="@string/still_to_be_updated"
+                        android:textColor="@color/textcolordescription"
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/btn_back1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/text_schedule1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/btnback"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp" />
+
+
+                </RelativeLayout>
+
+            </ScrollView>
+        </ViewFlipper>
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper2"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_below="@+id/viewFlipper1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/background_img"
+            android:elevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/background_img"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kvitarachna" />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/view_parakram2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="98dp"
+                    android:text="KAVITA RACHNA"
+                    android:textColor="@color/butoontextcolor"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/view_parakram2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="74dp"
+                    android:layout_marginStart="19dp"
+                    android:background="@drawable/back"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="@string/click_to_view"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="true"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/text_des2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/desc"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_description2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_des2"
+                        android:padding="8dp"
+                        android:text="Be it Harivansh sahab' Madhushala or poetries of Dinkar or couplets of Gulzar, hindi poetries touch our soul and vibrate our hearts and make us cry. And you can also spill that magic. Write your heart out and make the reader Jump with wow. Only restriction, it should be poetry and in hindi."
+                        android:textColor="@color/textcolordescription"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/text_sche2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_description2"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/schedule"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_schedule2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_sche2"
+                        android:padding="8dp"
+                        android:text="@string/still_to_be_updated"
+                        android:textColor="@color/textcolordescription"
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/btn_back2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@id/text_schedule2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/btnback"
+
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp" />
+
+
+                </RelativeLayout>
+
+            </ScrollView>
+        </ViewFlipper>
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper3"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_below="@+id/viewFlipper2"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/background_img"
+            android:elevation="5dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/background_img"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/questa" />
+
+
+                <TextView
+                    android:id="@+id/view_parakram3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="72dp"
+                    android:layout_marginStart="23dp"
+                    android:background="@drawable/back"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="@string/click_to_view"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="true"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/text_des3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/desc"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_description3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_des3"
+                        android:padding="8dp"
+                        android:text="Who's Jarvis, or who made 1st rocket ?It's all about questions.For those who feel thrill in winning a quiz, or have an active general knowledge. From the world to our locality, anything can be asked.Are you ready to answer? Come, and one who is geeky , will be the winner.
+"
+                        android:textColor="@color/textcolordescription"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/text_sche3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_description3"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/schedule"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_schedule3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_sche3"
+                        android:padding="8dp"
+                        android:text="@string/still_to_be_updated"
+                        android:textColor="@color/textcolordescription"
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/btn_back3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@id/text_schedule3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/btnback"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp" />
+
+
+                </RelativeLayout>
+
+            </ScrollView>
+        </ViewFlipper>
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper4"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_below="@+id/viewFlipper3"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/background_img"
+            android:elevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/im"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/background_img"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sena" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/view_parakram4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="98dp"
+                    android:text="SENATE"
+                    android:textColor="@color/butoontextcolor"
+                    android:textSize="60sp" />
+                <TextView
+                    android:id="@+id/view_parakram4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="74dp"
+                    android:layout_marginStart="19dp"
+                    android:background="@drawable/back"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="@string/click_to_view"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="true"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/text_des4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/desc"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_description4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_des4"
+                        android:padding="8dp"
+                        android:text="It is a well-known truth that we i.e., youth are the future of this country and we will be the game changer in future. We question status quo, dream the unachievable and then turn them into reality. For such daring spirit, the parliament session will begin in the campus of B.C.E. Bhagalpur and our M.Ps. will speak on the notion of  Infrastructure Development Policies for a Holistic Development."
+                        android:textColor="@color/textcolordescription"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/text_sche4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_description4"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/schedule"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_schedule4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_sche4"
+                        android:padding="8dp"
+                        android:text="@string/still_to_be_updated"
+                        android:textColor="@color/textcolordescription"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/btn_back4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@id/text_schedule4"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/btnback"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp" />
+
+
+                </RelativeLayout>
+
+            </ScrollView>
+        </ViewFlipper>
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="270dp"
+        android:layout_height="140dp"
+        android:layout_above="@+id/WaveLoadingview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/tech"
+        android:scaleType="fitXY" />
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:id="@+id/WaveLoadingview"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+
+        android:layout_above="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+
+        app:wlv_borderColor="#ffffff"
+        app:wlv_borderWidth="3dp"
+        app:wlv_round_rectangle="true"
+        app:wlv_shapeType="circle"
+
+        app:wlv_titleBottomColor="@android:color/white"
+        app:wlv_titleBottomSize="24sp"
+        app:wlv_titleBottomStrokeColor="@android:color/holo_blue_dark"
+        app:wlv_titleBottomStrokeWidth="3dp"
+        app:wlv_titleCenterColor="@android:color/white"
+        app:wlv_titleCenterSize="24sp"
+        app:wlv_titleCenterStrokeColor="@android:color/holo_blue_dark"
+        app:wlv_titleCenterStrokeWidth="3dp"
+        app:wlv_titleTopColor="@android:color/white"
+        app:wlv_titleTopSize="24sp"
+        app:wlv_titleTopStrokeColor="@android:color/holo_blue_dark"
+        app:wlv_titleTopStrokeWidth="3dp"
+        app:wlv_triangle_direction="north"
+        app:wlv_waveAmplitude="70"
+        app:wlv_waveColor="#FFFFFF" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/googleButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="34dp"
+        android:max="100" />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="54dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+    </com.google.android.gms.common.SignInButton>
+
+</RelativeLayout>
